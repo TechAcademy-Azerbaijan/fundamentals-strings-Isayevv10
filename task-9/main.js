@@ -1,6 +1,9 @@
-// Use these variables in your code
-
-let s = "This is a cat sitting on a table"
-let c = "t"
-
-// Write code here. 
+let s = result.input.split(',')[0].toLocaleLowerCase(); 
+let c = result.input.split(',')[1];
+let count = 0;
+for (let i = 0; i < s.length; i++) {
+    if (s[i] == c) {
+        count++;
+    }        
+}
+console.log(count);
